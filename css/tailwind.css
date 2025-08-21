@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #1a365d; /* blue-900 */
+  --color-primary-50: #ebf8ff; /* blue-50 */
+  --color-primary-100: #bee3f8; /* blue-100 */
+  --color-primary-200: #90cdf4; /* blue-200 */
+  --color-primary-300: #63b3ed; /* blue-300 */
+  --color-primary-400: #4299e1; /* blue-400 */
+  --color-primary-500: #3182ce; /* blue-500 */
+  --color-primary-600: #2b77cb; /* blue-600 */
+  --color-primary-700: #2c5282; /* blue-700 */
+  --color-primary-800: #2a4365; /* blue-800 */
+  --color-primary-900: #1a365d; /* blue-900 */
+
+  /* Secondary Colors */
+  --color-secondary: #805ad5; /* purple-500 */
+  --color-secondary-50: #faf5ff; /* purple-50 */
+  --color-secondary-100: #e9d8fd; /* purple-100 */
+  --color-secondary-200: #d6bcfa; /* purple-200 */
+  --color-secondary-300: #b794f6; /* purple-300 */
+  --color-secondary-400: #9f7aea; /* purple-400 */
+  --color-secondary-500: #805ad5; /* purple-500 */
+  --color-secondary-600: #6b46c1; /* purple-600 */
+  --color-secondary-700: #553c9a; /* purple-700 */
+  --color-secondary-800: #44337a; /* purple-800 */
+  --color-secondary-900: #322659; /* purple-900 */
+
+  /* Accent Colors */
+  --color-accent: #d69e2e; /* yellow-600 */
+  --color-accent-50: #fffff0; /* yellow-50 */
+  --color-accent-100: #fefcbf; /* yellow-100 */
+  --color-accent-200: #faf089; /* yellow-200 */
+  --color-accent-300: #f6e05e; /* yellow-300 */
+  --color-accent-400: #ecc94b; /* yellow-400 */
+  --color-accent-500: #d69e2e; /* yellow-500 */
+  --color-accent-600: #d69e2e; /* yellow-600 */
+  --color-accent-700: #b7791f; /* yellow-700 */
+  --color-accent-800: #975a16; /* yellow-800 */
+  --color-accent-900: #744210; /* yellow-900 */
+
+  /* Background Colors */
+  --color-background: #ffffff; /* white */
+  --color-surface: #f7fafc; /* gray-50 */
+  --color-surface-100: #edf2f7; /* gray-100 */
+  --color-surface-200: #e2e8f0; /* gray-200 */
+
+  /* Text Colors */
+  --color-text-primary: #2d3748; /* gray-700 */
+  --color-text-secondary: #718096; /* gray-500 */
+  --color-text-muted: #a0aec0; /* gray-400 */
+
+  /* Status Colors */
+  --color-success: #38a169; /* green-600 */
+  --color-success-50: #f0fff4; /* green-50 */
+  --color-success-100: #c6f6d5; /* green-100 */
+  --color-success-500: #48bb78; /* green-500 */
+
+  --color-warning: #d69e2e; /* yellow-600 */
+  --color-warning-50: #fffff0; /* yellow-50 */
+  --color-warning-100: #fefcbf; /* yellow-100 */
+
+  --color-error: #e53e3e; /* red-500 */
+  --color-error-50: #fed7d7; /* red-100 */
+  --color-error-100: #feb2b2; /* red-200 */
+  --color-error-500: #e53e3e; /* red-500 */
+
+  /* Border Colors */
+  --color-border: #e2e8f0; /* gray-200 */
+  --color-border-light: #f7fafc; /* gray-50 */
+
+  /* Shadow Variables */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-portfolio: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --shadow-cta: 0 4px 14px rgba(128, 90, 213, 0.25);
+
+  /* Animation Variables */
+  --transition-fast: 200ms ease-out;
+  --transition-normal: 300ms ease-out;
+  --transition-slow: 400ms ease-out;
+  --transition-reveal: 250ms ease-out;
+}
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--color-text-primary);
+  }
+
+  .font-accent {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-poppins font-semibold transition-all duration-300 hover:bg-primary-700 focus:outline-none focus:ring-4 focus:ring-primary-200;
+    box-shadow: var(--shadow-cta);
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white px-6 py-3 rounded-lg font-poppins font-semibold transition-all duration-300 hover:bg-secondary-600 focus:outline-none focus:ring-4 focus:ring-secondary-200;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-poppins font-semibold transition-all duration-300 hover:bg-accent-700 focus:outline-none focus:ring-4 focus:ring-accent-200;
+  }
+
+  .card {
+    @apply bg-white rounded-xl p-6 transition-all duration-300;
+    box-shadow: var(--shadow-md);
+  }
+
+  .card-hover {
+    @apply hover:transform hover:-translate-y-1;
+    box-shadow: var(--shadow-portfolio);
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-200 focus:border-primary-500 transition-all duration-200;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent;
+  }
+
+  .bg-gradient-primary {
+    @apply bg-gradient-to-r from-primary to-primary-700;
+  }
+
+  .bg-gradient-secondary {
+    @apply bg-gradient-to-r from-secondary to-secondary-600;
+  }
+
+  .bg-gradient-accent {
+    @apply bg-gradient-to-r from-accent to-accent-700;
+  }
+}
+
+@layer utilities {
+  .animation-fast {
+    transition-duration: var(--transition-fast);
+  }
+
+  .animation-normal {
+    transition-duration: var(--transition-normal);
+  }
+
+  .animation-slow {
+    transition-duration: var(--transition-slow);
+  }
+
+  .animation-reveal {
+    transition-duration: var(--transition-reveal);
+  }
+
+  .shadow-portfolio {
+    box-shadow: var(--shadow-portfolio);
+  }
+
+  .shadow-cta {
+    box-shadow: var(--shadow-cta);
+  }
+}
