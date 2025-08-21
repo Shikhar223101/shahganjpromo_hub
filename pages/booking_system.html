@@ -1,1085 +1,1731 @@
 <!DOCTYPE html>
 <html lang="hi" dir="ltr">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Your Package - ShahganjPromo Hub</title>
-    <meta name="description" content="Book professional Instagram content packages for your Shahganj business. Easy step-by-step booking process with WhatsApp integration and transparent pricing." />
+    <meta
+      name="description"
+      content="Book professional Instagram content packages for your Shahganj business. Easy step-by-step booking process with WhatsApp integration and transparent pricing."
+    />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fshahganjpr6510back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.7"></script>
-</head>
-<body class="bg-background">
+    <script
+      type="module"
+      src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fshahganjpr6510back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.7"
+    ></script>
+  </head>
+  <body class="bg-background">
     <!-- Navigation Header -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <svg class="h-10 w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" rx="8" fill="url(#gradient1)"/>
-                            <path d="M12 28V12h4l4 8 4-8h4v16h-3V18l-3 6h-2l-3-6v10h-3z" fill="white"/>
-                            <defs>
-                                <linearGradient id="gradient1" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#805ad5"/>
-                                    <stop offset="1" stop-color="#d69e2e"/>
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                    <div class="ml-3">
-                        <h1 class="text-xl font-poppins font-bold text-primary">ShahganjPromo Hub</h1>
-                        <p class="text-xs text-text-secondary">Instagram Marketing Expert</p>
-                    </div>
-                </div>
-
-                <!-- Desktop Navigation -->
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="homepage.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">होम</a>
-                        <a href="services_pricing.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">सेवाएं</a>
-                        <a href="portfolio_gallery.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">पोर्टफोलियो</a>
-                        <a href="about_creator.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">हमारे बारे में</a>
-                        <a href="contact_faq.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">संपर्क</a>
-                        <a href="booking_system.html" class="text-primary font-medium px-3 py-2 rounded-md text-sm bg-primary-50">बुक करें</a>
-                    </div>
-                </div>
-
-                <!-- Mobile menu button -->
-                <div class="md:hidden">
-                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary" onclick="toggleMobileMenu()">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        </svg>
-                    </button>
-                </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <svg
+                class="h-10 w-10"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="40" height="40" rx="8" fill="url(#gradient1)" />
+                <path
+                  d="M12 28V12h4l4 8 4-8h4v16h-3V18l-3 6h-2l-3-6v10h-3z"
+                  fill="white"
+                />
+                <defs>
+                  <linearGradient
+                    id="gradient1"
+                    x1="0"
+                    y1="0"
+                    x2="40"
+                    y2="40"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#805ad5" />
+                    <stop offset="1" stop-color="#d69e2e" />
+                  </linearGradient>
+                </defs>
+              </svg>
             </div>
-        </div>
-
-        <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="md:hidden hidden">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-                <a href="homepage.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">होम</a>
-                <a href="services_pricing.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">सेवाएं</a>
-                <a href="portfolio_gallery.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">पोर्टफोलियो</a>
-                <a href="about_creator.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">हमारे बारे में</a>
-                <a href="contact_faq.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">संपर्क</a>
-                <a href="booking_system.html" class="text-primary font-medium block px-3 py-2 rounded-md text-base bg-primary-50">बुक करें</a>
+            <div class="ml-3">
+              <h1 class="text-xl font-poppins font-bold text-primary">
+                ShahganjPromo_Hub
+              </h1>
+              <p class="text-xs text-text-secondary">
+                Instagram Marketing Expert
+              </p>
             </div>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a
+                href="homepage.html"
+                class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors"
+                >होम</a
+              >
+              <a
+                href="services_pricing.html"
+                class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors"
+                >सेवाएं</a
+              >
+              <a
+                href="portfolio_gallery.html"
+                class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors"
+                >पोर्टफोलियो</a
+              >
+              <a
+                href="about_creator.html"
+                class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors"
+                >हमारे बारे में</a
+              >
+              <a
+                href="contact_faq.html"
+                class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors"
+                >संपर्क</a
+              >
+              <a
+                href="booking_system.html"
+                class="text-primary font-medium px-3 py-2 rounded-md text-sm bg-primary-50"
+                >बुक करें</a
+              >
+            </div>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button
+              type="button"
+              class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary"
+              onclick="toggleMobileMenu()"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="md:hidden hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+          <a
+            href="homepage.html"
+            class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base"
+            >होम</a
+          >
+          <a
+            href="services_pricing.html"
+            class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base"
+            >सेवाएं</a
+          >
+          <a
+            href="portfolio_gallery.html"
+            class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base"
+            >पोर्टफोलियो</a
+          >
+          <a
+            href="about_creator.html"
+            class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base"
+            >हमारे बारे में</a
+          >
+          <a
+            href="contact_faq.html"
+            class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base"
+            >संपर्क</a
+          >
+          <a
+            href="booking_system.html"
+            class="text-primary font-medium block px-3 py-2 rounded-md text-base bg-primary-50"
+            >बुक करें</a
+          >
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-primary-50 via-white to-secondary-50 py-12">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-3xl lg:text-5xl font-poppins font-bold text-primary mb-4">
-                अपना Package <span class="text-gradient">Book करें</span>
-            </h1>
-            <p class="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
-                आसान 4-step process में अपने business के लिए perfect Instagram package चुनें
-            </p>
-            
-            <!-- Progress Indicator -->
-            <div class="flex justify-center items-center space-x-4 mb-8">
-                <div class="flex items-center">
-                    <div id="step1-indicator" class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-semibold">1</div>
-                    <span class="ml-2 text-sm font-medium text-primary">Service</span>
-                </div>
-                <div class="w-8 h-0.5 bg-gray-300"></div>
-                <div class="flex items-center">
-                    <div id="step2-indicator" class="w-8 h-8 bg-gray-300 text-gray-500 rounded-full flex items-center justify-center text-sm font-semibold">2</div>
-                    <span class="ml-2 text-sm font-medium text-gray-500">Customize</span>
-                </div>
-                <div class="w-8 h-0.5 bg-gray-300"></div>
-                <div class="flex items-center">
-                    <div id="step3-indicator" class="w-8 h-8 bg-gray-300 text-gray-500 rounded-full flex items-center justify-center text-sm font-semibold">3</div>
-                    <span class="ml-2 text-sm font-medium text-gray-500">Summary</span>
-                </div>
-                <div class="w-8 h-0.5 bg-gray-300"></div>
-                <div class="flex items-center">
-                    <div id="step4-indicator" class="w-8 h-8 bg-gray-300 text-gray-500 rounded-full flex items-center justify-center text-sm font-semibold">4</div>
-                    <span class="ml-2 text-sm font-medium text-gray-500">Book</span>
-                </div>
+    <section
+      class="bg-gradient-to-br from-primary-50 via-white to-secondary-50 py-12"
+    >
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1
+          class="text-3xl lg:text-5xl font-poppins font-bold text-primary mb-4"
+        >
+          अपना Package <span class="text-gradient">Book करें</span>
+        </h1>
+        <p class="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
+          आसान 4-step process में अपने business के लिए perfect Instagram package
+          चुनें
+        </p>
+
+        <!-- Progress Indicator -->
+        <div class="flex justify-center items-center space-x-4 mb-8">
+          <div class="flex items-center">
+            <div
+              id="step1-indicator"
+              class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-semibold"
+            >
+              1
             </div>
+            <span class="ml-2 text-sm font-medium text-primary">Service</span>
+          </div>
+          <div class="w-8 h-0.5 bg-gray-300"></div>
+          <div class="flex items-center">
+            <div
+              id="step2-indicator"
+              class="w-8 h-8 bg-gray-300 text-gray-500 rounded-full flex items-center justify-center text-sm font-semibold"
+            >
+              2
+            </div>
+            <span class="ml-2 text-sm font-medium text-gray-500"
+              >Customize</span
+            >
+          </div>
+          <div class="w-8 h-0.5 bg-gray-300"></div>
+          <div class="flex items-center">
+            <div
+              id="step3-indicator"
+              class="w-8 h-8 bg-gray-300 text-gray-500 rounded-full flex items-center justify-center text-sm font-semibold"
+            >
+              3
+            </div>
+            <span class="ml-2 text-sm font-medium text-gray-500">Summary</span>
+          </div>
+          <div class="w-8 h-0.5 bg-gray-300"></div>
+          <div class="flex items-center">
+            <div
+              id="step4-indicator"
+              class="w-8 h-8 bg-gray-300 text-gray-500 rounded-full flex items-center justify-center text-sm font-semibold"
+            >
+              4
+            </div>
+            <span class="ml-2 text-sm font-medium text-gray-500">Book</span>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Quick Packages Section -->
     <section class="py-8 bg-surface">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8">
-                <h2 class="text-2xl font-poppins font-bold text-primary mb-2">Quick Book करें</h2>
-                <p class="text-text-secondary">Popular packages - तुरंत book करें</p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-6 mb-12">
-                <!-- Starter Package -->
-                <div class="card card-hover text-center">
-                    <div class="w-12 h-12 bg-gradient-to-r from-secondary to-accent rounded-xl flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M8 5v14l11-7z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-poppins font-semibold text-primary mb-2">Starter Reel Package</h3>
-                    <p class="text-text-secondary text-sm mb-4">2 Professional Reels + 1 Story</p>
-                    <div class="text-2xl font-poppins font-bold text-accent mb-4">₹800</div>
-                    <a href="https://wa.me/919876543210?text=नमस्ते! मुझे Starter Reel Package (₹800) book करना है। 2 Professional Reels + 1 Story के लिए।" class="btn-primary w-full text-sm">Quick Book</a>
-                </div>
-
-                <!-- Growth Package -->
-                <div class="card card-hover text-center border-2 border-primary relative">
-                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                        <span class="bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold">Most Popular</span>
-                    </div>
-                    <div class="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-xl flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-poppins font-semibold text-primary mb-2">Growth Package</h3>
-                    <p class="text-text-secondary text-sm mb-4">5 Reels + 10 Stories + 3 Posts</p>
-                    <div class="text-2xl font-poppins font-bold text-accent mb-4">₹2,500</div>
-                    <a href="https://wa.me/919876543210?text=नमस्ते! मुझे Growth Package (₹2,500) book करना है। 5 Reels + 10 Stories + 3 Posts के लिए।" class="btn-primary w-full text-sm">Quick Book</a>
-                </div>
-
-                <!-- Premium Package -->
-                <div class="card card-hover text-center">
-                    <div class="w-12 h-12 bg-gradient-to-r from-accent to-primary rounded-xl flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-poppins font-semibold text-primary mb-2">Premium Management</h3>
-                    <p class="text-text-secondary text-sm mb-4">Complete Monthly Management</p>
-                    <div class="text-2xl font-poppins font-bold text-accent mb-4">₹5,000</div>
-                    <a href="https://wa.me/919876543210?text=नमस्ते! मुझे Premium Management Package (₹5,000) book करना है। Complete Monthly Management के लिए।" class="btn-primary w-full text-sm">Quick Book</a>
-                </div>
-            </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8">
+          <h2 class="text-2xl font-poppins font-bold text-primary mb-2">
+            Quick Book करें
+          </h2>
+          <p class="text-text-secondary">Popular packages - तुरंत book करें</p>
         </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+          <!-- Starter Package -->
+          <div class="card card-hover text-center">
+            <div
+              class="w-12 h-12 bg-gradient-to-r from-secondary to-accent rounded-xl flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-poppins font-semibold text-primary mb-2">
+              Starter Reel Package
+            </h3>
+            <p class="text-text-secondary text-sm mb-4">
+              1 Professional Reels + 1 Story
+            </p>
+            <div class="text-2xl font-poppins font-bold text-accent mb-4">
+              ₹1500
+            </div>
+            <a
+              href="https://wa.me/918787075785?text=नमस्ते! मुझे Starter Reel Package (₹800) book करना है। 2 Professional Reels + 1 Story के लिए।"
+              class="btn-primary w-full text-sm"
+              >Quick Book</a
+            >
+          </div>
+
+          <!-- Growth Package -->
+          <div
+            class="card card-hover text-center border-2 border-primary relative"
+          >
+            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+              <span
+                class="bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold"
+                >Most Popular</span
+              >
+            </div>
+            <div
+              class="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-xl flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-lg font-poppins font-semibold text-primary mb-2">
+              Growth Package
+            </h3>
+            <p class="text-text-secondary text-sm mb-4">2 Reels + 2 Stories</p>
+            <div class="text-2xl font-poppins font-bold text-accent mb-4">
+              ₹3000
+            </div>
+            <a
+              href="https://wa.me/918787075785?text=नमस्ते! मुझे Growth Package (₹2,500) book करना है। 5 Reels + 10 Stories + 3 Posts के लिए।"
+              class="btn-primary w-full text-sm"
+              >Quick Book</a
+            >
+          </div>
+
+          <!-- Premium Package -->
+          <div class="card card-hover text-center">
+            <div
+              class="w-12 h-12 bg-gradient-to-r from-accent to-primary rounded-xl flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-lg font-poppins font-semibold text-primary mb-2">
+              Premium Management
+            </h3>
+            <p class="text-text-secondary text-sm mb-4">
+              Complete Monthly Management
+            </p>
+            <div class="text-2xl font-poppins font-bold text-accent mb-4">
+              ₹5,000
+            </div>
+            <a
+              href="https://wa.me/918787075785?text=नमस्ते! मुझे Premium Management Package (₹5,000) book करना है। Complete Monthly Management के लिए।"
+              class="btn-primary w-full text-sm"
+              >Quick Book</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Custom Booking Form -->
     <section class="py-16 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-poppins font-bold text-primary mb-4">Custom Package बनाएं</h2>
-                <p class="text-lg text-text-secondary">अपनी जरूरत के अनुसार package customize करें</p>
-            </div>
-
-            <!-- Step 1: Service Selection -->
-            <div id="step1" class="booking-step">
-                <div class="card">
-                    <h3 class="text-xl font-poppins font-semibold text-primary mb-6">Step 1: Service Category चुनें</h3>
-                    
-                    <div class="grid md:grid-cols-3 gap-6">
-                        <!-- Instagram Reels -->
-                        <div class="service-option border-2 border-gray-200 rounded-xl p-6 cursor-pointer transition-all hover:border-primary" onclick="selectService('reels')">
-                            <div class="text-center">
-                                <div class="w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-xl flex items-center justify-center mx-auto mb-4">
-                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z"/>
-                                    </svg>
-                                </div>
-                                <h4 class="font-poppins font-semibold text-primary mb-2">Instagram Reels</h4>
-                                <p class="text-sm text-text-secondary mb-3">Viral video content</p>
-                                <div class="text-accent font-semibold">₹500 - ₹1,500 per reel</div>
-                            </div>
-                        </div>
-
-                        <!-- Instagram Stories -->
-                        <div class="service-option border-2 border-gray-200 rounded-xl p-6 cursor-pointer transition-all hover:border-primary" onclick="selectService('stories')">
-                            <div class="text-center">
-                                <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-xl flex items-center justify-center mx-auto mb-4">
-                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                    </svg>
-                                </div>
-                                <h4 class="font-poppins font-semibold text-primary mb-2">Instagram Stories</h4>
-                                <p class="text-sm text-text-secondary mb-3">Daily engagement content</p>
-                                <div class="text-accent font-semibold">₹300 - ₹800 per story</div>
-                            </div>
-                        </div>
-
-                        <!-- Instagram Posts -->
-                        <div class="service-option border-2 border-gray-200 rounded-xl p-6 cursor-pointer transition-all hover:border-primary" onclick="selectService('posts')">
-                            <div class="text-center">
-                                <div class="w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-xl flex items-center justify-center mx-auto mb-4">
-                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-                                    </svg>
-                                </div>
-                                <h4 class="font-poppins font-semibold text-primary mb-2">Instagram Posts</h4>
-                                <p class="text-sm text-text-secondary mb-3">Professional feed content</p>
-                                <div class="text-accent font-semibold">₹400 - ₹1,200 per post</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="text-center mt-8">
-                        <button onclick="nextStep(2)" class="btn-primary" disabled id="step1-next">
-                            Next: Customize Package
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Step 2: Customization -->
-            <div id="step2" class="booking-step hidden">
-                <div class="card">
-                    <h3 class="text-xl font-poppins font-semibold text-primary mb-6">Step 2: Package Customize करें</h3>
-                    
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <!-- Content Details -->
-                        <div>
-                            <h4 class="font-poppins font-semibold text-primary mb-4">Content Details</h4>
-                            
-                            <div class="space-y-4">
-                                <div>
-                                    <label class="block text-sm font-medium text-text-primary mb-2">Quantity</label>
-                                    <select id="quantity" class="input-field">
-                                        <option value="1">1 Content</option>
-                                        <option value="2">2 Content</option>
-                                        <option value="3">3 Content</option>
-                                        <option value="5">5 Content</option>
-                                        <option value="10">10 Content</option>
-                                    </select>
-                                </div>
-
-                                <div>
-                                    <label class="block text-sm font-medium text-text-primary mb-2">Content Frequency</label>
-                                    <select id="frequency" class="input-field">
-                                        <option value="one-time">One Time</option>
-                                        <option value="weekly">Weekly</option>
-                                        <option value="bi-weekly">Bi-Weekly</option>
-                                        <option value="monthly">Monthly</option>
-                                    </select>
-                                </div>
-
-                                <div>
-                                    <label class="block text-sm font-medium text-text-primary mb-2">Timeline</label>
-                                    <select id="timeline" class="input-field">
-                                        <option value="3-days">3 Days</option>
-                                        <option value="1-week">1 Week</option>
-                                        <option value="2-weeks">2 Weeks</option>
-                                        <option value="1-month">1 Month</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Add-on Services -->
-                        <div>
-                            <h4 class="font-poppins font-semibold text-primary mb-4">Add-on Services</h4>
-                            
-                            <div class="space-y-3">
-                                <label class="flex items-center">
-                                    <input type="checkbox" class="rounded border-gray-300 text-primary focus:ring-primary" value="hashtag-research" />
-                                    <span class="ml-3 text-sm">Hashtag Research (+₹200)</span>
-                                </label>
-                                
-                                <label class="flex items-center">
-                                    <input type="checkbox" class="rounded border-gray-300 text-primary focus:ring-primary" value="content-planning" />
-                                    <span class="ml-3 text-sm">Content Planning (+₹500)</span>
-                                </label>
-                                
-                                <label class="flex items-center">
-                                    <input type="checkbox" class="rounded border-gray-300 text-primary focus:ring-primary" value="posting-service" />
-                                    <span class="ml-3 text-sm">Posting Service (+₹300)</span>
-                                </label>
-                                
-                                <label class="flex items-center">
-                                    <input type="checkbox" class="rounded border-gray-300 text-primary focus:ring-primary" value="analytics-report" />
-                                    <span class="ml-3 text-sm">Analytics Report (+₹400)</span>
-                                </label>
-                                
-                                <label class="flex items-center">
-                                    <input type="checkbox" class="rounded border-gray-300 text-primary focus:ring-primary" value="rush-delivery" />
-                                    <span class="ml-3 text-sm">Rush Delivery (+₹800)</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-8">
-                        <label class="block text-sm font-medium text-text-primary mb-2">Special Requirements</label>
-                        <textarea id="requirements" class="input-field" rows="3" placeholder="कोई specific requirements या instructions..."></textarea>
-                    </div>
-
-                    <div class="flex justify-between mt-8">
-                        <button onclick="prevStep(1)" class="btn-secondary">Previous</button>
-                        <button onclick="nextStep(3)" class="btn-primary">Next: Review Summary</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Step 3: Summary -->
-            <div id="step3" class="booking-step hidden">
-                <div class="card">
-                    <h3 class="text-xl font-poppins font-semibold text-primary mb-6">Step 3: Package Summary</h3>
-                    
-                    <div class="bg-surface rounded-xl p-6 mb-6">
-                        <div class="grid md:grid-cols-2 gap-8">
-                            <!-- Package Details -->
-                            <div>
-                                <h4 class="font-poppins font-semibold text-primary mb-4">Package Details</h4>
-                                <div class="space-y-2 text-sm">
-                                    <div class="flex justify-between">
-                                        <span class="text-text-secondary">Service Type:</span>
-                                        <span id="summary-service" class="font-medium">-</span>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <span class="text-text-secondary">Quantity:</span>
-                                        <span id="summary-quantity" class="font-medium">-</span>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <span class="text-text-secondary">Frequency:</span>
-                                        <span id="summary-frequency" class="font-medium">-</span>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <span class="text-text-secondary">Timeline:</span>
-                                        <span id="summary-timeline" class="font-medium">-</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Pricing Breakdown -->
-                            <div>
-                                <h4 class="font-poppins font-semibold text-primary mb-4">Pricing Breakdown</h4>
-                                <div class="space-y-2 text-sm">
-                                    <div class="flex justify-between">
-                                        <span class="text-text-secondary">Base Price:</span>
-                                        <span id="summary-base-price" class="font-medium">₹0</span>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <span class="text-text-secondary">Add-ons:</span>
-                                        <span id="summary-addons-price" class="font-medium">₹0</span>
-                                    </div>
-                                    <hr class="my-2" />
-                                    <div class="flex justify-between text-lg font-poppins font-bold">
-                                        <span class="text-primary">Total:</span>
-                                        <span id="summary-total-price" class="text-accent">₹0</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Delivery Schedule -->
-                        <div class="mt-6 pt-6 border-t border-gray-200">
-                            <h4 class="font-poppins font-semibold text-primary mb-3">Delivery Schedule</h4>
-                            <div class="bg-white rounded-lg p-4">
-                                <div class="flex items-center text-sm">
-                                    <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                    </svg>
-                                    <span class="text-text-secondary">Expected Delivery: </span>
-                                    <span id="delivery-date" class="font-medium ml-1">-</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex justify-between">
-                        <button onclick="prevStep(2)" class="btn-secondary">Previous</button>
-                        <button onclick="nextStep(4)" class="btn-primary">Proceed to Book</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Step 4: Business Information & Booking -->
-            <div id="step4" class="booking-step hidden">
-                <div class="card">
-                    <h3 class="text-xl font-poppins font-semibold text-primary mb-6">Step 4: Business Information</h3>
-                    
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-sm font-medium text-text-primary mb-2">Business Name *</label>
-                            <input type="text" id="business-name" class="input-field" placeholder="आपके business का नाम" required />
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-text-primary mb-2">Contact Person *</label>
-                            <input type="text" id="contact-person" class="input-field" placeholder="आपका नाम" required />
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-text-primary mb-2">Phone Number *</label>
-                            <input type="tel" id="phone-number" class="input-field" placeholder="+91 98765 43210" required />
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-text-primary mb-2">Business Type</label>
-                            <select id="business-type" class="input-field">
-                                <option value>Select Business Type</option>
-                                <option value="restaurant">Restaurant/Cafe</option>
-                                <option value="retail">Retail Shop</option>
-                                <option value="services">Services</option>
-                                <option value="healthcare">Healthcare</option>
-                                <option value="education">Education</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-
-                        <div class="md:col-span-2">
-                            <label class="block text-sm font-medium text-text-primary mb-2">Business Address</label>
-                            <input type="text" id="business-address" class="input-field" placeholder="Shahganj, Uttar Pradesh" />
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-text-primary mb-2">Instagram Handle</label>
-                            <input type="text" id="instagram-handle" class="input-field" placeholder="@yourbusiness" />
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-text-primary mb-2">Preferred Contact Time</label>
-                            <select id="contact-time" class="input-field">
-                                <option value="morning">Morning (9AM-12PM)</option>
-                                <option value="afternoon">Afternoon (12PM-5PM)</option>
-                                <option value="evening">Evening (5PM-8PM)</option>
-                                <option value="anytime">Anytime</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="mt-6">
-                        <label class="block text-sm font-medium text-text-primary mb-2">Additional Notes</label>
-                        <textarea id="additional-notes" class="input-field" rows="3" placeholder="कोई additional information या specific requirements..."></textarea>
-                    </div>
-
-                    <!-- Payment Information -->
-                    <div class="bg-surface rounded-xl p-6 mt-6">
-                        <h4 class="font-poppins font-semibold text-primary mb-4">Payment Information</h4>
-                        <div class="grid md:grid-cols-3 gap-4 text-sm">
-                            <div class="flex items-center">
-                                <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                </svg>
-                                <span>UPI Payment</span>
-                            </div>
-                            <div class="flex items-center">
-                                <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                </svg>
-                                <span>Bank Transfer</span>
-                            </div>
-                            <div class="flex items-center">
-                                <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                </svg>
-                                <span>Cash Payment</span>
-                            </div>
-                        </div>
-                        <p class="text-xs text-text-secondary mt-3">
-                            * 50% advance payment required to start work. No hidden charges.
-                        </p>
-                    </div>
-
-                    <div class="flex justify-between mt-8">
-                        <button onclick="prevStep(3)" class="btn-secondary">Previous</button>
-                        <button onclick="bookPackage()" class="btn-primary">
-                            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-5 h-5 mr-2 inline" />
-                            Book via WhatsApp
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-poppins font-bold text-primary mb-4">
+            Custom Package बनाएं
+          </h2>
+          <p class="text-lg text-text-secondary">
+            अपनी जरूरत के अनुसार package customize करें
+          </p>
         </div>
+
+        <!-- Step 1: Service Selection -->
+        <div id="step1" class="booking-step">
+          <div class="card">
+            <h3 class="text-xl font-poppins font-semibold text-primary mb-6">
+              Step 1: Service Category चुनें
+            </h3>
+
+            <div class="grid md:grid-cols-3 gap-6">
+              <!-- Instagram Reels -->
+              <div
+                class="service-option border-2 border-gray-200 rounded-xl p-6 cursor-pointer transition-all hover:border-primary"
+                onclick="selectService('reels')"
+              >
+                <div class="text-center">
+                  <div
+                    class="w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-xl flex items-center justify-center mx-auto mb-4"
+                  >
+                    <svg
+                      class="w-8 h-8 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                  <h4 class="font-poppins font-semibold text-primary mb-2">
+                    Instagram Reels
+                  </h4>
+                  <p class="text-sm text-text-secondary mb-3">
+                    Viral video content
+                  </p>
+                  <div class="text-accent font-semibold">
+                    ₹500 - ₹1,500 per reel
+                  </div>
+                </div>
+              </div>
+
+              <!-- Instagram Stories -->
+              <div
+                class="service-option border-2 border-gray-200 rounded-xl p-6 cursor-pointer transition-all hover:border-primary"
+                onclick="selectService('stories')"
+              >
+                <div class="text-center">
+                  <div
+                    class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-xl flex items-center justify-center mx-auto mb-4"
+                  >
+                    <svg
+                      class="w-8 h-8 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                      />
+                    </svg>
+                  </div>
+                  <h4 class="font-poppins font-semibold text-primary mb-2">
+                    Instagram Stories
+                  </h4>
+                  <p class="text-sm text-text-secondary mb-3">
+                    Daily engagement content
+                  </p>
+                  <div class="text-accent font-semibold">
+                    ₹300 - ₹800 per story
+                  </div>
+                </div>
+              </div>
+
+              <!-- Instagram Posts -->
+              <div
+                class="service-option border-2 border-gray-200 rounded-xl p-6 cursor-pointer transition-all hover:border-primary"
+                onclick="selectService('posts')"
+              >
+                <div class="text-center">
+                  <div
+                    class="w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-xl flex items-center justify-center mx-auto mb-4"
+                  >
+                    <svg
+                      class="w-8 h-8 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+                      />
+                    </svg>
+                  </div>
+                  <h4 class="font-poppins font-semibold text-primary mb-2">
+                    Instagram Posts
+                  </h4>
+                  <p class="text-sm text-text-secondary mb-3">
+                    Professional feed content
+                  </p>
+                  <div class="text-accent font-semibold">
+                    ₹400 - ₹1,200 per post
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-8">
+              <button
+                onclick="nextStep(2)"
+                class="btn-primary"
+                disabled
+                id="step1-next"
+              >
+                Next: Customize Package
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Customization -->
+        <div id="step2" class="booking-step hidden">
+          <div class="card">
+            <h3 class="text-xl font-poppins font-semibold text-primary mb-6">
+              Step 2: Package Customize करें
+            </h3>
+
+            <div class="grid md:grid-cols-2 gap-8">
+              <!-- Content Details -->
+              <div>
+                <h4 class="font-poppins font-semibold text-primary mb-4">
+                  Content Details
+                </h4>
+
+                <div class="space-y-4">
+                  <div>
+                    <label
+                      class="block text-sm font-medium text-text-primary mb-2"
+                      >Quantity</label
+                    >
+                    <select id="quantity" class="input-field">
+                      <option value="1">1 Content</option>
+                      <option value="2">2 Content</option>
+                      <option value="3">3 Content</option>
+                      <option value="5">5 Content</option>
+                      <option value="10">10 Content</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label
+                      class="block text-sm font-medium text-text-primary mb-2"
+                      >Content Frequency</label
+                    >
+                    <select id="frequency" class="input-field">
+                      <option value="one-time">One Time</option>
+                      <option value="weekly">Weekly</option>
+                      <option value="bi-weekly">Bi-Weekly</option>
+                      <option value="monthly">Monthly</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label
+                      class="block text-sm font-medium text-text-primary mb-2"
+                      >Timeline</label
+                    >
+                    <select id="timeline" class="input-field">
+                      <option value="3-days">3 Days</option>
+                      <option value="1-week">1 Week</option>
+                      <option value="2-weeks">2 Weeks</option>
+                      <option value="1-month">1 Month</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Add-on Services -->
+              <div>
+                <h4 class="font-poppins font-semibold text-primary mb-4">
+                  Add-on Services
+                </h4>
+
+                <div class="space-y-3">
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-primary focus:ring-primary"
+                      value="hashtag-research"
+                    />
+                    <span class="ml-3 text-sm">Hashtag Research (+₹200)</span>
+                  </label>
+
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-primary focus:ring-primary"
+                      value="content-planning"
+                    />
+                    <span class="ml-3 text-sm">Content Planning (+₹500)</span>
+                  </label>
+
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-primary focus:ring-primary"
+                      value="posting-service"
+                    />
+                    <span class="ml-3 text-sm">Posting Service (+₹300)</span>
+                  </label>
+
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-primary focus:ring-primary"
+                      value="analytics-report"
+                    />
+                    <span class="ml-3 text-sm">Analytics Report (+₹400)</span>
+                  </label>
+
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-primary focus:ring-primary"
+                      value="rush-delivery"
+                    />
+                    <span class="ml-3 text-sm">Rush Delivery (+₹800)</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <label class="block text-sm font-medium text-text-primary mb-2"
+                >Special Requirements</label
+              >
+              <textarea
+                id="requirements"
+                class="input-field"
+                rows="3"
+                placeholder="कोई specific requirements या instructions..."
+              ></textarea>
+            </div>
+
+            <div class="flex justify-between mt-8">
+              <button onclick="prevStep(1)" class="btn-secondary">
+                Previous
+              </button>
+              <button onclick="nextStep(3)" class="btn-primary">
+                Next: Review Summary
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Summary -->
+        <div id="step3" class="booking-step hidden">
+          <div class="card">
+            <h3 class="text-xl font-poppins font-semibold text-primary mb-6">
+              Step 3: Package Summary
+            </h3>
+
+            <div class="bg-surface rounded-xl p-6 mb-6">
+              <div class="grid md:grid-cols-2 gap-8">
+                <!-- Package Details -->
+                <div>
+                  <h4 class="font-poppins font-semibold text-primary mb-4">
+                    Package Details
+                  </h4>
+                  <div class="space-y-2 text-sm">
+                    <div class="flex justify-between">
+                      <span class="text-text-secondary">Service Type:</span>
+                      <span id="summary-service" class="font-medium">-</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="text-text-secondary">Quantity:</span>
+                      <span id="summary-quantity" class="font-medium">-</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="text-text-secondary">Frequency:</span>
+                      <span id="summary-frequency" class="font-medium">-</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="text-text-secondary">Timeline:</span>
+                      <span id="summary-timeline" class="font-medium">-</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pricing Breakdown -->
+                <div>
+                  <h4 class="font-poppins font-semibold text-primary mb-4">
+                    Pricing Breakdown
+                  </h4>
+                  <div class="space-y-2 text-sm">
+                    <div class="flex justify-between">
+                      <span class="text-text-secondary">Base Price:</span>
+                      <span id="summary-base-price" class="font-medium"
+                        >₹0</span
+                      >
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="text-text-secondary">Add-ons:</span>
+                      <span id="summary-addons-price" class="font-medium"
+                        >₹0</span
+                      >
+                    </div>
+                    <hr class="my-2" />
+                    <div
+                      class="flex justify-between text-lg font-poppins font-bold"
+                    >
+                      <span class="text-primary">Total:</span>
+                      <span id="summary-total-price" class="text-accent"
+                        >₹0</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Delivery Schedule -->
+              <div class="mt-6 pt-6 border-t border-gray-200">
+                <h4 class="font-poppins font-semibold text-primary mb-3">
+                  Delivery Schedule
+                </h4>
+                <div class="bg-white rounded-lg p-4">
+                  <div class="flex items-center text-sm">
+                    <svg
+                      class="w-5 h-5 text-success mr-2"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                      />
+                    </svg>
+                    <span class="text-text-secondary">Expected Delivery: </span>
+                    <span id="delivery-date" class="font-medium ml-1">-</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-between">
+              <button onclick="prevStep(2)" class="btn-secondary">
+                Previous
+              </button>
+              <button onclick="nextStep(4)" class="btn-primary">
+                Proceed to Book
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4: Business Information & Booking -->
+        <div id="step4" class="booking-step hidden">
+          <div class="card">
+            <h3 class="text-xl font-poppins font-semibold text-primary mb-6">
+              Step 4: Business Information
+            </h3>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-medium text-text-primary mb-2"
+                  >Business Name *</label
+                >
+                <input
+                  type="text"
+                  id="business-name"
+                  class="input-field"
+                  placeholder="आपके business का नाम"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-text-primary mb-2"
+                  >Contact Person *</label
+                >
+                <input
+                  type="text"
+                  id="contact-person"
+                  class="input-field"
+                  placeholder="आपका नाम"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-text-primary mb-2"
+                  >Phone Number *</label
+                >
+                <input
+                  type="tel"
+                  id="phone-number"
+                  class="input-field"
+                  placeholder="+91 98765 43210"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-text-primary mb-2"
+                  >Business Type</label
+                >
+                <select id="business-type" class="input-field">
+                  <option value>Select Business Type</option>
+                  <option value="restaurant">Restaurant/Cafe</option>
+                  <option value="retail">Retail Shop</option>
+                  <option value="services">Services</option>
+                  <option value="healthcare">Healthcare</option>
+                  <option value="education">Education</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="md:col-span-2">
+                <label class="block text-sm font-medium text-text-primary mb-2"
+                  >Business Address</label
+                >
+                <input
+                  type="text"
+                  id="business-address"
+                  class="input-field"
+                  placeholder="Shahganj, Uttar Pradesh"
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-text-primary mb-2"
+                  >Instagram Handle</label
+                >
+                <input
+                  type="text"
+                  id="instagram-handle"
+                  class="input-field"
+                  placeholder="@yourbusiness"
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-text-primary mb-2"
+                  >Preferred Contact Time</label
+                >
+                <select id="contact-time" class="input-field">
+                  <option value="morning">Morning (9AM-12PM)</option>
+                  <option value="afternoon">Afternoon (12PM-5PM)</option>
+                  <option value="evening">Evening (5PM-8PM)</option>
+                  <option value="anytime">Anytime</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mt-6">
+              <label class="block text-sm font-medium text-text-primary mb-2"
+                >Additional Notes</label
+              >
+              <textarea
+                id="additional-notes"
+                class="input-field"
+                rows="3"
+                placeholder="कोई additional information या specific requirements..."
+              ></textarea>
+            </div>
+
+            <!-- Payment Information -->
+            <div class="bg-surface rounded-xl p-6 mt-6">
+              <h4 class="font-poppins font-semibold text-primary mb-4">
+                Payment Information
+              </h4>
+              <div class="grid md:grid-cols-3 gap-4 text-sm">
+                <div class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-success mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                  <span>UPI Payment</span>
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-success mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                  <span>Bank Transfer</span>
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-success mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                  <span>Cash Payment</span>
+                </div>
+              </div>
+              <p class="text-xs text-text-secondary mt-3">
+                * 50% advance payment required to start work. No hidden charges.
+              </p>
+            </div>
+
+            <div class="flex justify-between mt-8">
+              <button onclick="prevStep(3)" class="btn-secondary">
+                Previous
+              </button>
+              <button onclick="bookPackage()" class="btn-primary">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+                  alt="WhatsApp"
+                  class="w-5 h-5 mr-2 inline"
+                />
+                Book via WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Availability Calendar -->
     <section class="py-16 bg-surface">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8">
-                <h2 class="text-2xl font-poppins font-bold text-primary mb-4">Current Availability</h2>
-                <p class="text-text-secondary">Check available slots for your project</p>
-            </div>
-
-            <div class="card">
-                <div class="grid md:grid-cols-2 gap-8">
-                    <!-- Calendar Widget -->
-                    <div>
-                        <h3 class="font-poppins font-semibold text-primary mb-4">August 2025</h3>
-                        <div class="grid grid-cols-7 gap-2 text-center text-sm">
-                            <!-- Calendar Header -->
-                            <div class="font-semibold text-text-secondary py-2">Sun</div>
-                            <div class="font-semibold text-text-secondary py-2">Mon</div>
-                            <div class="font-semibold text-text-secondary py-2">Tue</div>
-                            <div class="font-semibold text-text-secondary py-2">Wed</div>
-                            <div class="font-semibold text-text-secondary py-2">Thu</div>
-                            <div class="font-semibold text-text-secondary py-2">Fri</div>
-                            <div class="font-semibold text-text-secondary py-2">Sat</div>
-                            
-                            <!-- Calendar Days -->
-                            <div class="py-2 text-gray-300">27</div>
-                            <div class="py-2 text-gray-300">28</div>
-                            <div class="py-2 text-gray-300">29</div>
-                            <div class="py-2 text-gray-300">30</div>
-                            <div class="py-2 text-gray-300">31</div>
-                            <div class="py-2">1</div>
-                            <div class="py-2">2</div>
-                            
-                            <div class="py-2">3</div>
-                            <div class="py-2">4</div>
-                            <div class="py-2">5</div>
-                            <div class="py-2">6</div>
-                            <div class="py-2">7</div>
-                            <div class="py-2">8</div>
-                            <div class="py-2">9</div>
-                            
-                            <div class="py-2">10</div>
-                            <div class="py-2">11</div>
-                            <div class="py-2">12</div>
-                            <div class="py-2">13</div>
-                            <div class="py-2">14</div>
-                            <div class="py-2">15</div>
-                            <div class="py-2">16</div>
-                            
-                            <div class="py-2">17</div>
-                            <div class="py-2">18</div>
-                            <div class="py-2">19</div>
-                            <div class="py-2">20</div>
-                            <div class="py-2 bg-primary text-white rounded">21</div>
-                            <div class="py-2 bg-success text-white rounded">22</div>
-                            <div class="py-2 bg-success text-white rounded">23</div>
-                            
-                            <div class="py-2">24</div>
-                            <div class="py-2 bg-error text-white rounded">25</div>
-                            <div class="py-2 bg-error text-white rounded">26</div>
-                            <div class="py-2">27</div>
-                            <div class="py-2">28</div>
-                            <div class="py-2">29</div>
-                            <div class="py-2">30</div>
-                            
-                            <div class="py-2">31</div>
-                        </div>
-                    </div>
-
-                    <!-- Availability Legend -->
-                    <div>
-                        <h3 class="font-poppins font-semibold text-primary mb-4">Availability Status</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-center">
-                                <div class="w-4 h-4 bg-success rounded mr-3"></div>
-                                <span class="text-sm">Available - Quick Delivery</span>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="w-4 h-4 bg-primary rounded mr-3"></div>
-                                <span class="text-sm">Today - Book Now</span>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="w-4 h-4 bg-error rounded mr-3"></div>
-                                <span class="text-sm">Busy - Limited Slots</span>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="w-4 h-4 bg-gray-200 rounded mr-3"></div>
-                                <span class="text-sm">Regular Availability</span>
-                            </div>
-                        </div>
-
-                        <!-- Current Workload -->
-                        <div class="mt-6 p-4 bg-primary-50 rounded-lg">
-                            <h4 class="font-semibold text-primary mb-2">Current Workload</h4>
-                            <div class="text-sm text-text-secondary">
-                                <p>• 3 projects in progress</p>
-                                <p>• Next available slot: Aug 22</p>
-                                <p>• Rush delivery available</p>
-                            </div>
-                        </div>
-
-                        <!-- Emergency Booking -->
-                        <div class="mt-4 p-4 bg-accent-50 rounded-lg">
-                            <h4 class="font-semibold text-accent mb-2">Emergency Booking</h4>
-                            <p class="text-sm text-text-secondary mb-3">
-                                Need urgent content for events or promotions?
-                            </p>
-                            <a href="https://wa.me/919876543210?text=नमस्ते! मुझे emergency booking की जरूरत है। Urgent content के लिए।" class="btn-accent text-sm">Emergency Book (+50% charges)</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8">
+          <h2 class="text-2xl font-poppins font-bold text-primary mb-4">
+            Current Availability
+          </h2>
+          <p class="text-text-secondary">
+            Check available slots for your project
+          </p>
         </div>
+
+        <div class="card">
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Calendar Widget -->
+            <div>
+              <h3 class="font-poppins font-semibold text-primary mb-4">
+                August 2025
+              </h3>
+              <div class="grid grid-cols-7 gap-2 text-center text-sm">
+                <!-- Calendar Header -->
+                <div class="font-semibold text-text-secondary py-2">Sun</div>
+                <div class="font-semibold text-text-secondary py-2">Mon</div>
+                <div class="font-semibold text-text-secondary py-2">Tue</div>
+                <div class="font-semibold text-text-secondary py-2">Wed</div>
+                <div class="font-semibold text-text-secondary py-2">Thu</div>
+                <div class="font-semibold text-text-secondary py-2">Fri</div>
+                <div class="font-semibold text-text-secondary py-2">Sat</div>
+
+                <!-- Calendar Days -->
+                <div class="py-2 text-gray-300">27</div>
+                <div class="py-2 text-gray-300">28</div>
+                <div class="py-2 text-gray-300">29</div>
+                <div class="py-2 text-gray-300">30</div>
+                <div class="py-2 text-gray-300">31</div>
+                <div class="py-2">1</div>
+                <div class="py-2">2</div>
+
+                <div class="py-2">3</div>
+                <div class="py-2">4</div>
+                <div class="py-2">5</div>
+                <div class="py-2">6</div>
+                <div class="py-2">7</div>
+                <div class="py-2">8</div>
+                <div class="py-2">9</div>
+
+                <div class="py-2">10</div>
+                <div class="py-2">11</div>
+                <div class="py-2">12</div>
+                <div class="py-2">13</div>
+                <div class="py-2">14</div>
+                <div class="py-2">15</div>
+                <div class="py-2">16</div>
+
+                <div class="py-2">17</div>
+                <div class="py-2">18</div>
+                <div class="py-2">19</div>
+                <div class="py-2">20</div>
+                <div class="py-2 bg-primary text-white rounded">21</div>
+                <div class="py-2 bg-success text-white rounded">22</div>
+                <div class="py-2 bg-success text-white rounded">23</div>
+
+                <div class="py-2">24</div>
+                <div class="py-2 bg-error text-white rounded">25</div>
+                <div class="py-2 bg-error text-white rounded">26</div>
+                <div class="py-2">27</div>
+                <div class="py-2">28</div>
+                <div class="py-2">29</div>
+                <div class="py-2">30</div>
+
+                <div class="py-2">31</div>
+              </div>
+            </div>
+
+            <!-- Availability Legend -->
+            <div>
+              <h3 class="font-poppins font-semibold text-primary mb-4">
+                Availability Status
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-center">
+                  <div class="w-4 h-4 bg-success rounded mr-3"></div>
+                  <span class="text-sm">Available - Quick Delivery</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-4 h-4 bg-primary rounded mr-3"></div>
+                  <span class="text-sm">Today - Book Now</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-4 h-4 bg-error rounded mr-3"></div>
+                  <span class="text-sm">Busy - Limited Slots</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-4 h-4 bg-gray-200 rounded mr-3"></div>
+                  <span class="text-sm">Regular Availability</span>
+                </div>
+              </div>
+
+              <!-- Current Workload -->
+              <div class="mt-6 p-4 bg-primary-50 rounded-lg">
+                <h4 class="font-semibold text-primary mb-2">
+                  Current Workload
+                </h4>
+                <div class="text-sm text-text-secondary">
+                  <p>• 3 projects in progress</p>
+                  <p>• Next available slot: Aug 22</p>
+                  <p>• Rush delivery available</p>
+                </div>
+              </div>
+
+              <!-- Emergency Booking -->
+              <div class="mt-4 p-4 bg-accent-50 rounded-lg">
+                <h4 class="font-semibold text-accent mb-2">
+                  Emergency Booking
+                </h4>
+                <p class="text-sm text-text-secondary mb-3">
+                  Need urgent content for events or promotions?
+                </p>
+                <a
+                  href="https://wa.me/918787075785?text=नमस्ते! मुझे emergency booking की जरूरत है। Urgent content के लिए।"
+                  class="btn-accent text-sm"
+                  >Emergency Book (+50% charges)</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FAQ Section -->
     <section class="py-16 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-poppins font-bold text-primary mb-4">Booking FAQs</h2>
-                <p class="text-lg text-text-secondary">Common questions about our booking process</p>
-            </div>
-
-            <div class="space-y-6">
-                <!-- FAQ Item 1 -->
-                <div class="card">
-                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(1)">
-                        <h3 class="font-poppins font-semibold text-primary">Booking के बाद क्या होता है?</h3>
-                        <svg id="faq-icon-1" class="w-5 h-5 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div id="faq-content-1" class="hidden mt-4 text-text-secondary">
-                        <p>Booking के तुरंत बाद हम आपसे WhatsApp पर contact करेंगे। फिर project details discuss करके 50% advance payment के बाद work start करेंगे।</p>
-                    </div>
-                </div>
-
-                <!-- FAQ Item 2 -->
-                <div class="card">
-                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(2)">
-                        <h3 class="font-poppins font-semibold text-primary">Payment कैसे करें?</h3>
-                        <svg id="faq-icon-2" class="w-5 h-5 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div id="faq-content-2" class="hidden mt-4 text-text-secondary">
-                        <p>हम UPI, Bank Transfer, और Cash payment accept करते हैं। 50% advance और 50% delivery के time payment करना होता है। कोई hidden charges नहीं हैं।</p>
-                    </div>
-                </div>
-
-                <!-- FAQ Item 3 -->
-                <div class="card">
-                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(3)">
-                        <h3 class="font-poppins font-semibold text-primary">Content delivery कितने दिन में होती है?</h3>
-                        <svg id="faq-icon-3" class="w-5 h-5 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div id="faq-content-3" class="hidden mt-4 text-text-secondary">
-                        <p>Normal delivery 3-7 days में होती है। Rush delivery के लिए extra charges के साथ 24-48 hours में भी deliver कर सकते हैं।</p>
-                    </div>
-                </div>
-
-                <!-- FAQ Item 4 -->
-                <div class="card">
-                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(4)">
-                        <h3 class="font-poppins font-semibold text-primary">Revisions की policy क्या है?</h3>
-                        <svg id="faq-icon-4" class="w-5 h-5 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div id="faq-content-4" class="hidden mt-4 text-text-secondary">
-                        <p>हर package में 2 free revisions included हैं। Additional revisions के लिए minimal charges apply होते हैं। हमारा goal है कि आप 100% satisfied हों।</p>
-                    </div>
-                </div>
-
-                <!-- FAQ Item 5 -->
-                <div class="card">
-                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(5)">
-                        <h3 class="font-poppins font-semibold text-primary">क्या आप content post भी करते हैं?</h3>
-                        <svg id="faq-icon-5" class="w-5 h-5 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div id="faq-content-5" class="hidden mt-4 text-text-secondary">
-                        <p>हाँ, posting service भी available है। Add-on के रूप में ₹300 extra charge के साथ हम आपके account पर content post कर सकते हैं।</p>
-                    </div>
-                </div>
-            </div>
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-poppins font-bold text-primary mb-4">
+            Booking FAQs
+          </h2>
+          <p class="text-lg text-text-secondary">
+            Common questions about our booking process
+          </p>
         </div>
+
+        <div class="space-y-6">
+          <!-- FAQ Item 1 -->
+          <div class="card">
+            <button
+              class="w-full text-left flex justify-between items-center"
+              onclick="toggleFAQ(1)"
+            >
+              <h3 class="font-poppins font-semibold text-primary">
+                Booking के बाद क्या होता है?
+              </h3>
+              <svg
+                id="faq-icon-1"
+                class="w-5 h-5 text-primary transform transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div id="faq-content-1" class="hidden mt-4 text-text-secondary">
+              <p>
+                Booking के तुरंत बाद हम आपसे WhatsApp पर contact करेंगे। फिर
+                project details discuss करके 50% advance payment के बाद work
+                start करेंगे।
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="card">
+            <button
+              class="w-full text-left flex justify-between items-center"
+              onclick="toggleFAQ(2)"
+            >
+              <h3 class="font-poppins font-semibold text-primary">
+                Payment कैसे करें?
+              </h3>
+              <svg
+                id="faq-icon-2"
+                class="w-5 h-5 text-primary transform transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div id="faq-content-2" class="hidden mt-4 text-text-secondary">
+              <p>
+                हम UPI, Bank Transfer, और Cash payment accept करते हैं। 50%
+                advance और 50% delivery के time payment करना होता है। कोई hidden
+                charges नहीं हैं।
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="card">
+            <button
+              class="w-full text-left flex justify-between items-center"
+              onclick="toggleFAQ(3)"
+            >
+              <h3 class="font-poppins font-semibold text-primary">
+                Content delivery कितने दिन में होती है?
+              </h3>
+              <svg
+                id="faq-icon-3"
+                class="w-5 h-5 text-primary transform transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div id="faq-content-3" class="hidden mt-4 text-text-secondary">
+              <p>
+                Normal delivery 3-7 days में होती है। Rush delivery के लिए extra
+                charges के साथ 24-48 hours में भी deliver कर सकते हैं।
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="card">
+            <button
+              class="w-full text-left flex justify-between items-center"
+              onclick="toggleFAQ(4)"
+            >
+              <h3 class="font-poppins font-semibold text-primary">
+                Revisions की policy क्या है?
+              </h3>
+              <svg
+                id="faq-icon-4"
+                class="w-5 h-5 text-primary transform transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div id="faq-content-4" class="hidden mt-4 text-text-secondary">
+              <p>
+                हर package में 2 free revisions included हैं। Additional
+                revisions के लिए minimal charges apply होते हैं। हमारा goal है
+                कि आप 100% satisfied हों।
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="card">
+            <button
+              class="w-full text-left flex justify-between items-center"
+              onclick="toggleFAQ(5)"
+            >
+              <h3 class="font-poppins font-semibold text-primary">
+                क्या आप content post भी करते हैं?
+              </h3>
+              <svg
+                id="faq-icon-5"
+                class="w-5 h-5 text-primary transform transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div id="faq-content-5" class="hidden mt-4 text-text-secondary">
+              <p>
+                हाँ, posting service भी available है। Add-on के रूप में ₹300
+                extra charge के साथ हम आपके account पर content post कर सकते हैं।
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Trust Signals -->
     <section class="py-12 bg-surface">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-8 text-center">
-                <!-- No Hidden Fees -->
-                <div class="flex flex-col items-center">
-                    <div class="w-16 h-16 bg-success rounded-full flex items-center justify-center mb-4">
-                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                        </svg>
-                    </div>
-                    <h3 class="font-poppins font-semibold text-primary mb-2">No Hidden Fees</h3>
-                    <p class="text-text-secondary text-sm">Transparent pricing with no surprise charges</p>
-                </div>
-
-                <!-- Quick Response -->
-                <div class="flex flex-col items-center">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4">
-                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.5 6L12 10.5 8.5 8 12 5.5 15.5 8zM12 13.5l3.5-2.5L12 8.5 8.5 11l3.5 2.5z"/>
-                        </svg>
-                    </div>
-                    <h3 class="font-poppins font-semibold text-primary mb-2">Quick Response</h3>
-                    <p class="text-text-secondary text-sm">Response within 2 hours on WhatsApp</p>
-                </div>
-
-                <!-- Satisfaction Guarantee -->
-                <div class="flex flex-col items-center">
-                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mb-4">
-                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="font-poppins font-semibold text-primary mb-2">Satisfaction Guarantee</h3>
-                    <p class="text-text-secondary text-sm">100% satisfaction or money back</p>
-                </div>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+          <!-- No Hidden Fees -->
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-success rounded-full flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                />
+              </svg>
             </div>
+            <h3 class="font-poppins font-semibold text-primary mb-2">
+              No Hidden Fees
+            </h3>
+            <p class="text-text-secondary text-sm">
+              Transparent pricing with no surprise charges
+            </p>
+          </div>
+
+          <!-- Quick Response -->
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.5 6L12 10.5 8.5 8 12 5.5 15.5 8zM12 13.5l3.5-2.5L12 8.5 8.5 11l3.5 2.5z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-poppins font-semibold text-primary mb-2">
+              Quick Response
+            </h3>
+            <p class="text-text-secondary text-sm">
+              Response within 2 hours on WhatsApp
+            </p>
+          </div>
+
+          <!-- Satisfaction Guarantee -->
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-poppins font-semibold text-primary mb-2">
+              Satisfaction Guarantee
+            </h3>
+            <p class="text-text-secondary text-sm">
+              100% satisfaction or money back
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8">
-                <!-- Company Info -->
-                <div class="md:col-span-2">
-                    <div class="flex items-center mb-4">
-                        <svg class="h-8 w-8" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" rx="8" fill="url(#gradient2)"/>
-                            <path d="M12 28V12h4l4 8 4-8h4v16h-3V18l-3 6h-2l-3-6v10h-3z" fill="white"/>
-                            <defs>
-                                <linearGradient id="gradient2" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#805ad5"/>
-                                    <stop offset="1" stop-color="#d69e2e"/>
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                        <div class="ml-3">
-                            <h3 class="text-xl font-poppins font-bold">ShahganjPromo Hub</h3>
-                            <p class="text-gray-400 text-sm">Instagram Marketing Expert</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-400 mb-4 max-w-md">
-                        Shahganj के local businesses के लिए professional Instagram content creation और marketing services।
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="https://instagram.com/shahganjpromo_hub" class="text-gray-400 hover:text-white transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                        <a href="https://wa.me/919876543210" class="text-gray-400 hover:text-white transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Quick Links -->
-                <div>
-                    <h4 class="text-lg font-poppins font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="homepage.html" class="text-gray-400 hover:text-white transition-colors">होम</a></li>
-                        <li><a href="services_pricing.html" class="text-gray-400 hover:text-white transition-colors">सेवाएं</a></li>
-                        <li><a href="portfolio_gallery.html" class="text-gray-400 hover:text-white transition-colors">पोर्टफोलियो</a></li>
-                        <li><a href="about_creator.html" class="text-gray-400 hover:text-white transition-colors">हमारे बारे में</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Info -->
-                <div>
-                    <h4 class="text-lg font-poppins font-semibold mb-4">संपर्क</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>📱 +91 98765 43210</li>
-                        <li>📧 info@shahganjpromo.com</li>
-                        <li>📍 Shahganj, Uttar Pradesh</li>
-                        <li>🕒 Mon-Sat: 9AM-7PM</li>
-                    </ul>
-                </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8">
+          <!-- Company Info -->
+          <div class="md:col-span-2">
+            <div class="flex items-center mb-4">
+              <svg
+                class="h-8 w-8"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="40" height="40" rx="8" fill="url(#gradient2)" />
+                <path
+                  d="M12 28V12h4l4 8 4-8h4v16h-3V18l-3 6h-2l-3-6v10h-3z"
+                  fill="white"
+                />
+                <defs>
+                  <linearGradient
+                    id="gradient2"
+                    x1="0"
+                    y1="0"
+                    x2="40"
+                    y2="40"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#805ad5" />
+                    <stop offset="1" stop-color="#d69e2e" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="ml-3">
+                <h3 class="text-xl font-poppins font-bold">
+                  ShahganjPromo_Hub
+                </h3>
+                <p class="text-gray-400 text-sm">Instagram Marketing Expert</p>
+              </div>
             </div>
-
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 ShahganjPromo Hub. All Rights Reserved.</p>
+            <p class="text-gray-400 mb-4 max-w-md">
+              Shahganj के local businesses के लिए professional Instagram content
+              creation और marketing services।
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://instagram.com/shahganjpromo_hub"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/918787075785"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"
+                  />
+                </svg>
+              </a>
             </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-poppins font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="homepage.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >होम</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services_pricing.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >सेवाएं</a
+                >
+              </li>
+              <li>
+                <a
+                  href="portfolio_gallery.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >पोर्टफोलियो</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about_creator.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >हमारे बारे में</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-lg font-poppins font-semibold mb-4">संपर्क</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>📱 +91 87870 75785</li>
+              <li>📧 info@shahganjpromo.com</li>
+              <li>📍 Shahganj, Uttar Pradesh</li>
+              <li>🕒 Mon-Sat: 9AM-7PM</li>
+            </ul>
+          </div>
         </div>
+
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2025 ShahganjPromo_Hub. All Rights Reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <!-- Sticky WhatsApp Button -->
     <div class="fixed bottom-6 right-6 z-50">
-        <a href="https://wa.me/919876543210?text=नमस्ते! मुझे booking के बारे में जानकारी चाहिए।" class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-            </svg>
-        </a>
+      <a
+        href="https://wa.me/918787075785?text=नमस्ते! मुझे booking के बारे में जानकारी चाहिए।"
+        class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center"
+      >
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"
+          />
+        </svg>
+      </a>
     </div>
 
     <script>
-        // Global variables
-        let currentStep = 1;
-        let selectedService = '';
-        let packageData = {
-            service: '',
-            quantity: 1,
-            frequency: 'one-time',
-            timeline: '1-week',
-            addons: [],
-            basePrice: 0,
-            totalPrice: 0
-        };
+      // Global variables
+      let currentStep = 1;
+      let selectedService = "";
+      let packageData = {
+        service: "",
+        quantity: 1,
+        frequency: "one-time",
+        timeline: "1-week",
+        addons: [],
+        basePrice: 0,
+        totalPrice: 0,
+      };
 
-        // Service pricing
-        const servicePricing = {
-            reels: { base: 500, max: 1500 },
-            stories: { base: 300, max: 800 },
-            posts: { base: 400, max: 1200 }
-        };
+      // Service pricing
+      const servicePricing = {
+        reels: { base: 500, max: 1500 },
+        stories: { base: 300, max: 800 },
+        posts: { base: 400, max: 1200 },
+      };
 
-        const addonPricing = {
-            'hashtag-research': 200,
-            'content-planning': 500,
-            'posting-service': 300,
-            'analytics-report': 400,
-            'rush-delivery': 800
-        };
+      const addonPricing = {
+        "hashtag-research": 200,
+        "content-planning": 500,
+        "posting-service": 300,
+        "analytics-report": 400,
+        "rush-delivery": 800,
+      };
 
-        // Mobile Menu Toggle
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        }
+      // Mobile Menu Toggle
+      function toggleMobileMenu() {
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenu.classList.toggle("hidden");
+      }
 
-        // Service Selection
-        function selectService(service) {
-            selectedService = service;
-            packageData.service = service;
-            
-            // Update UI
-            document.querySelectorAll('.service-option').forEach(option => {
-                option.classList.remove('border-primary', 'bg-primary-50');
-                option.classList.add('border-gray-200');
-            });
-            
-            event.currentTarget.classList.remove('border-gray-200');
-            event.currentTarget.classList.add('border-primary', 'bg-primary-50');
-            
-            // Enable next button
-            document.getElementById('step1-next').disabled = false;
-            document.getElementById('step1-next').classList.remove('opacity-50', 'cursor-not-allowed');
-        }
+      // Service Selection
+      function selectService(service) {
+        selectedService = service;
+        packageData.service = service;
 
-        // Step Navigation
-        function nextStep(step) {
-            if (step === 2 && !selectedService) return;
-            
-            // Hide current step
-            document.getElementById(`step${currentStep}`).classList.add('hidden');
-            
-            // Update progress indicators
-            document.getElementById(`step${currentStep}-indicator`).classList.remove('bg-primary', 'text-white');
-            document.getElementById(`step${currentStep}-indicator`).classList.add('bg-success', 'text-white');
-            
-            // Show next step
-            currentStep = step;
-            document.getElementById(`step${currentStep}`).classList.remove('hidden');
-            
-            // Update progress indicator
-            document.getElementById(`step${currentStep}-indicator`).classList.remove('bg-gray-300', 'text-gray-500');
-            document.getElementById(`step${currentStep}-indicator`).classList.add('bg-primary', 'text-white');
-            
-            // Update step indicator text color
-            const indicators = document.querySelectorAll('[id$="-indicator"]');
-            indicators.forEach((indicator, index) => {
-                const stepNum = index + 1;
-                const textElement = indicator.nextElementSibling;
-                if (stepNum <= currentStep) {
-                    textElement.classList.remove('text-gray-500');
-                    textElement.classList.add('text-primary');
-                } else {
-                    textElement.classList.remove('text-primary');
-                    textElement.classList.add('text-gray-500');
-                }
-            });
-            
-            if (step === 3) {
-                updateSummary();
-            }
-        }
-
-        function prevStep(step) {
-            // Hide current step
-            document.getElementById(`step${currentStep}`).classList.add('hidden');
-            
-            // Update progress indicators
-            document.getElementById(`step${currentStep}-indicator`).classList.remove('bg-primary', 'text-white');
-            document.getElementById(`step${currentStep}-indicator`).classList.add('bg-gray-300', 'text-gray-500');
-            
-            // Show previous step
-            currentStep = step;
-            document.getElementById(`step${currentStep}`).classList.remove('hidden');
-            
-            // Update progress indicator
-            document.getElementById(`step${currentStep}-indicator`).classList.remove('bg-gray-300', 'text-gray-500', 'bg-success');
-            document.getElementById(`step${currentStep}-indicator`).classList.add('bg-primary', 'text-white');
-            
-            // Update step indicator text color
-            const indicators = document.querySelectorAll('[id$="-indicator"]');
-            indicators.forEach((indicator, index) => {
-                const stepNum = index + 1;
-                const textElement = indicator.nextElementSibling;
-                if (stepNum <= currentStep) {
-                    textElement.classList.remove('text-gray-500');
-                    textElement.classList.add('text-primary');
-                } else {
-                    textElement.classList.remove('text-primary');
-                    textElement.classList.add('text-gray-500');
-                }
-            });
-        }
-
-        // Update Summary
-        function updateSummary() {
-            // Get form values
-            packageData.quantity = parseInt(document.getElementById('quantity').value);
-            packageData.frequency = document.getElementById('frequency').value;
-            packageData.timeline = document.getElementById('timeline').value;
-            
-            // Get selected addons
-            const addonCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-            packageData.addons = Array.from(addonCheckboxes).map(cb => cb.value);
-            
-            // Calculate pricing
-            const basePrice = servicePricing[packageData.service].base * packageData.quantity;
-            const addonPrice = packageData.addons.reduce((total, addon) => {
-                return total + (addonPricing[addon] || 0);
-            }, 0);
-            
-            packageData.basePrice = basePrice;
-            packageData.totalPrice = basePrice + addonPrice;
-            
-            // Update summary display
-            document.getElementById('summary-service').textContent = getServiceName(packageData.service);
-            document.getElementById('summary-quantity').textContent = packageData.quantity;
-            document.getElementById('summary-frequency').textContent = getFrequencyName(packageData.frequency);
-            document.getElementById('summary-timeline').textContent = getTimelineName(packageData.timeline);
-            document.getElementById('summary-base-price').textContent = `₹${packageData.basePrice.toLocaleString()}`;
-            document.getElementById('summary-addons-price').textContent = `₹${addonPrice.toLocaleString()}`;
-            document.getElementById('summary-total-price').textContent = `₹${packageData.totalPrice.toLocaleString()}`;
-            
-            // Calculate delivery date
-            const deliveryDays = getDeliveryDays(packageData.timeline);
-            const deliveryDate = new Date();
-            deliveryDate.setDate(deliveryDate.getDate() + deliveryDays);
-            document.getElementById('delivery-date').textContent = deliveryDate.toLocaleDateString('hi-IN');
-        }
-
-        // Helper functions
-        function getServiceName(service) {
-            const names = {
-                'reels': 'Instagram Reels',
-                'stories': 'Instagram Stories',
-                'posts': 'Instagram Posts'
-            };
-            return names[service] || service;
-        }
-
-        function getFrequencyName(frequency) {
-            const names = {
-                'one-time': 'One Time',
-                'weekly': 'Weekly',
-                'bi-weekly': 'Bi-Weekly',
-                'monthly': 'Monthly'
-            };
-            return names[frequency] || frequency;
-        }
-
-        function getTimelineName(timeline) {
-            const names = {
-                '3-days': '3 Days',
-                '1-week': '1 Week',
-                '2-weeks': '2 Weeks',
-                '1-month': '1 Month'
-            };
-            return names[timeline] || timeline;
-        }
-
-        function getDeliveryDays(timeline) {
-            const days = {
-                '3-days': 3,
-                '1-week': 7,
-                '2-weeks': 14,
-                '1-month': 30
-            };
-            return days[timeline] || 7;
-        }
-
-        // Book Package
-        function bookPackage() {
-            // Get business information
-            const businessName = document.getElementById('business-name').value;
-            const contactPerson = document.getElementById('contact-person').value;
-            const phoneNumber = document.getElementById('phone-number').value;
-            const businessType = document.getElementById('business-type').value;
-            const businessAddress = document.getElementById('business-address').value;
-            const instagramHandle = document.getElementById('instagram-handle').value;
-            const contactTime = document.getElementById('contact-time').value;
-            const additionalNotes = document.getElementById('additional-notes').value;
-            
-            // Validate required fields
-            if (!businessName || !contactPerson || !phoneNumber) {
-                alert('कृपया सभी required fields भरें।');
-                return;
-            }
-            
-            // Create WhatsApp message
-            let message = `नमस्ते! मुझे निम्नलिखित package book करना है:\n\n`;
-            message += `📋 PACKAGE DETAILS:\n`;
-            message += `• Service: ${getServiceName(packageData.service)}\n`;
-            message += `• Quantity: ${packageData.quantity}\n`;
-            message += `• Frequency: ${getFrequencyName(packageData.frequency)}\n`;
-            message += `• Timeline: ${getTimelineName(packageData.timeline)}\n`;
-            
-            if (packageData.addons.length > 0) {
-                message += `• Add-ons: ${packageData.addons.join(', ')}\n`;
-            }
-            
-            message += `• Total Price: ₹${packageData.totalPrice.toLocaleString()}\n\n`;
-            
-            message += `🏢 BUSINESS INFORMATION:\n`;
-            message += `• Business Name: ${businessName}\n`;
-            message += `• Contact Person: ${contactPerson}\n`;
-            message += `• Phone: ${phoneNumber}\n`;
-            
-            if (businessType) message += `• Business Type: ${businessType}\n`;
-            if (businessAddress) message += `• Address: ${businessAddress}\n`;
-            if (instagramHandle) message += `• Instagram: ${instagramHandle}\n`;
-            message += `• Preferred Contact Time: ${contactTime}\n`;
-            
-            if (additionalNotes) {
-                message += `\n📝 ADDITIONAL NOTES:\n${additionalNotes}\n`;
-            }
-            
-            message += `\nकृपया इस booking को confirm करें और payment details share करें।`;
-            
-            // Redirect to WhatsApp
-            const whatsappURL = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
-            window.open(whatsappURL, '_blank');
-        }
-
-        // FAQ Toggle
-        function toggleFAQ(faqNumber) {
-            const content = document.getElementById(`faq-content-${faqNumber}`);
-            const icon = document.getElementById(`faq-icon-${faqNumber}`);
-            
-            if (content.classList.contains('hidden')) {
-                content.classList.remove('hidden');
-                icon.style.transform = 'rotate(180deg)';
-            } else {
-                content.classList.add('hidden');
-                icon.style.transform = 'rotate(0deg)';
-            }
-        }
-
-        // Initialize page
-        document.addEventListener('DOMContentLoaded', function() {
-            // Set default values
-            document.getElementById('step1-next').disabled = true;
-            document.getElementById('step1-next').classList.add('opacity-50', 'cursor-not-allowed');
-            
-            // Add event listeners for real-time updates
-            document.getElementById('quantity').addEventListener('change', updatePricing);
-            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-                checkbox.addEventListener('change', updatePricing);
-            });
+        // Update UI
+        document.querySelectorAll(".service-option").forEach((option) => {
+          option.classList.remove("border-primary", "bg-primary-50");
+          option.classList.add("border-gray-200");
         });
 
-        function updatePricing() {
-            if (currentStep >= 2) {
-                // Real-time pricing update logic can be added here
-            }
+        event.currentTarget.classList.remove("border-gray-200");
+        event.currentTarget.classList.add("border-primary", "bg-primary-50");
+
+        // Enable next button
+        document.getElementById("step1-next").disabled = false;
+        document
+          .getElementById("step1-next")
+          .classList.remove("opacity-50", "cursor-not-allowed");
+      }
+
+      // Step Navigation
+      function nextStep(step) {
+        if (step === 2 && !selectedService) return;
+
+        // Hide current step
+        document.getElementById(`step${currentStep}`).classList.add("hidden");
+
+        // Update progress indicators
+        document
+          .getElementById(`step${currentStep}-indicator`)
+          .classList.remove("bg-primary", "text-white");
+        document
+          .getElementById(`step${currentStep}-indicator`)
+          .classList.add("bg-success", "text-white");
+
+        // Show next step
+        currentStep = step;
+        document
+          .getElementById(`step${currentStep}`)
+          .classList.remove("hidden");
+
+        // Update progress indicator
+        document
+          .getElementById(`step${currentStep}-indicator`)
+          .classList.remove("bg-gray-300", "text-gray-500");
+        document
+          .getElementById(`step${currentStep}-indicator`)
+          .classList.add("bg-primary", "text-white");
+
+        // Update step indicator text color
+        const indicators = document.querySelectorAll('[id$="-indicator"]');
+        indicators.forEach((indicator, index) => {
+          const stepNum = index + 1;
+          const textElement = indicator.nextElementSibling;
+          if (stepNum <= currentStep) {
+            textElement.classList.remove("text-gray-500");
+            textElement.classList.add("text-primary");
+          } else {
+            textElement.classList.remove("text-primary");
+            textElement.classList.add("text-gray-500");
+          }
+        });
+
+        if (step === 3) {
+          updateSummary();
         }
+      }
+
+      function prevStep(step) {
+        // Hide current step
+        document.getElementById(`step${currentStep}`).classList.add("hidden");
+
+        // Update progress indicators
+        document
+          .getElementById(`step${currentStep}-indicator`)
+          .classList.remove("bg-primary", "text-white");
+        document
+          .getElementById(`step${currentStep}-indicator`)
+          .classList.add("bg-gray-300", "text-gray-500");
+
+        // Show previous step
+        currentStep = step;
+        document
+          .getElementById(`step${currentStep}`)
+          .classList.remove("hidden");
+
+        // Update progress indicator
+        document
+          .getElementById(`step${currentStep}-indicator`)
+          .classList.remove("bg-gray-300", "text-gray-500", "bg-success");
+        document
+          .getElementById(`step${currentStep}-indicator`)
+          .classList.add("bg-primary", "text-white");
+
+        // Update step indicator text color
+        const indicators = document.querySelectorAll('[id$="-indicator"]');
+        indicators.forEach((indicator, index) => {
+          const stepNum = index + 1;
+          const textElement = indicator.nextElementSibling;
+          if (stepNum <= currentStep) {
+            textElement.classList.remove("text-gray-500");
+            textElement.classList.add("text-primary");
+          } else {
+            textElement.classList.remove("text-primary");
+            textElement.classList.add("text-gray-500");
+          }
+        });
+      }
+
+      // Update Summary
+      function updateSummary() {
+        // Get form values
+        packageData.quantity = parseInt(
+          document.getElementById("quantity").value
+        );
+        packageData.frequency = document.getElementById("frequency").value;
+        packageData.timeline = document.getElementById("timeline").value;
+
+        // Get selected addons
+        const addonCheckboxes = document.querySelectorAll(
+          'input[type="checkbox"]:checked'
+        );
+        packageData.addons = Array.from(addonCheckboxes).map((cb) => cb.value);
+
+        // Calculate pricing
+        const basePrice =
+          servicePricing[packageData.service].base * packageData.quantity;
+        const addonPrice = packageData.addons.reduce((total, addon) => {
+          return total + (addonPricing[addon] || 0);
+        }, 0);
+
+        packageData.basePrice = basePrice;
+        packageData.totalPrice = basePrice + addonPrice;
+
+        // Update summary display
+        document.getElementById("summary-service").textContent = getServiceName(
+          packageData.service
+        );
+        document.getElementById("summary-quantity").textContent =
+          packageData.quantity;
+        document.getElementById("summary-frequency").textContent =
+          getFrequencyName(packageData.frequency);
+        document.getElementById("summary-timeline").textContent =
+          getTimelineName(packageData.timeline);
+        document.getElementById(
+          "summary-base-price"
+        ).textContent = `₹${packageData.basePrice.toLocaleString()}`;
+        document.getElementById(
+          "summary-addons-price"
+        ).textContent = `₹${addonPrice.toLocaleString()}`;
+        document.getElementById(
+          "summary-total-price"
+        ).textContent = `₹${packageData.totalPrice.toLocaleString()}`;
+
+        // Calculate delivery date
+        const deliveryDays = getDeliveryDays(packageData.timeline);
+        const deliveryDate = new Date();
+        deliveryDate.setDate(deliveryDate.getDate() + deliveryDays);
+        document.getElementById("delivery-date").textContent =
+          deliveryDate.toLocaleDateString("hi-IN");
+      }
+
+      // Helper functions
+      function getServiceName(service) {
+        const names = {
+          reels: "Instagram Reels",
+          stories: "Instagram Stories",
+          posts: "Instagram Posts",
+        };
+        return names[service] || service;
+      }
+
+      function getFrequencyName(frequency) {
+        const names = {
+          "one-time": "One Time",
+          weekly: "Weekly",
+          "bi-weekly": "Bi-Weekly",
+          monthly: "Monthly",
+        };
+        return names[frequency] || frequency;
+      }
+
+      function getTimelineName(timeline) {
+        const names = {
+          "3-days": "3 Days",
+          "1-week": "1 Week",
+          "2-weeks": "2 Weeks",
+          "1-month": "1 Month",
+        };
+        return names[timeline] || timeline;
+      }
+
+      function getDeliveryDays(timeline) {
+        const days = {
+          "3-days": 3,
+          "1-week": 7,
+          "2-weeks": 14,
+          "1-month": 30,
+        };
+        return days[timeline] || 7;
+      }
+
+      // Book Package
+      function bookPackage() {
+        // Get business information
+        const businessName = document.getElementById("business-name").value;
+        const contactPerson = document.getElementById("contact-person").value;
+        const phoneNumber = document.getElementById("phone-number").value;
+        const businessType = document.getElementById("business-type").value;
+        const businessAddress =
+          document.getElementById("business-address").value;
+        const instagramHandle =
+          document.getElementById("instagram-handle").value;
+        const contactTime = document.getElementById("contact-time").value;
+        const additionalNotes =
+          document.getElementById("additional-notes").value;
+
+        // Validate required fields
+        if (!businessName || !contactPerson || !phoneNumber) {
+          alert("कृपया सभी required fields भरें।");
+          return;
+        }
+
+        // Create WhatsApp message
+        let message = `नमस्ते! मुझे निम्नलिखित package book करना है:\n\n`;
+        message += `📋 PACKAGE DETAILS:\n`;
+        message += `• Service: ${getServiceName(packageData.service)}\n`;
+        message += `• Quantity: ${packageData.quantity}\n`;
+        message += `• Frequency: ${getFrequencyName(packageData.frequency)}\n`;
+        message += `• Timeline: ${getTimelineName(packageData.timeline)}\n`;
+
+        if (packageData.addons.length > 0) {
+          message += `• Add-ons: ${packageData.addons.join(", ")}\n`;
+        }
+
+        message += `• Total Price: ₹${packageData.totalPrice.toLocaleString()}\n\n`;
+
+        message += `🏢 BUSINESS INFORMATION:\n`;
+        message += `• Business Name: ${businessName}\n`;
+        message += `• Contact Person: ${contactPerson}\n`;
+        message += `• Phone: ${phoneNumber}\n`;
+
+        if (businessType) message += `• Business Type: ${businessType}\n`;
+        if (businessAddress) message += `• Address: ${businessAddress}\n`;
+        if (instagramHandle) message += `• Instagram: ${instagramHandle}\n`;
+        message += `• Preferred Contact Time: ${contactTime}\n`;
+
+        if (additionalNotes) {
+          message += `\n📝 ADDITIONAL NOTES:\n${additionalNotes}\n`;
+        }
+
+        message += `\nकृपया इस booking को confirm करें और payment details share करें।`;
+
+        // Redirect to WhatsApp
+        const whatsappURL = `https://wa.me/918787075785?text=${encodeURIComponent(
+          message
+        )}`;
+        window.open(whatsappURL, "_blank");
+      }
+
+      // FAQ Toggle
+      function toggleFAQ(faqNumber) {
+        const content = document.getElementById(`faq-content-${faqNumber}`);
+        const icon = document.getElementById(`faq-icon-${faqNumber}`);
+
+        if (content.classList.contains("hidden")) {
+          content.classList.remove("hidden");
+          icon.style.transform = "rotate(180deg)";
+        } else {
+          content.classList.add("hidden");
+          icon.style.transform = "rotate(0deg)";
+        }
+      }
+
+      // Initialize page
+      document.addEventListener("DOMContentLoaded", function () {
+        // Set default values
+        document.getElementById("step1-next").disabled = true;
+        document
+          .getElementById("step1-next")
+          .classList.add("opacity-50", "cursor-not-allowed");
+
+        // Add event listeners for real-time updates
+        document
+          .getElementById("quantity")
+          .addEventListener("change", updatePricing);
+        document
+          .querySelectorAll('input[type="checkbox"]')
+          .forEach((checkbox) => {
+            checkbox.addEventListener("change", updatePricing);
+          });
+      });
+
+      function updatePricing() {
+        if (currentStep >= 2) {
+          // Real-time pricing update logic can be added here
+        }
+      }
     </script>
-<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
-</body>
+    <script
+      id="dhws-dataInjector"
+      src="../public/dhws-data-injector.js"
+    ></script>
+  </body>
 </html>
